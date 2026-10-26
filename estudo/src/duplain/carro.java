@@ -6,20 +6,17 @@ class modelo_car {
     private String modelo;
     private double velocidade;
 
-    // Construtor
     public modelo_car(String marca, String modelo, double velocidade) {
         this.marca = marca;
         this.modelo = modelo;
         this.velocidade = velocidade;
     }
 
-    // Método para acelerar (aumenta a velocidade atual gradualmente)
     public void acelerar(double incremento) {
         velocidade += incremento;
         System.out.println("O carro acelerou! Nova velocidade: " + velocidade + " km/h");
     }
 
-    // Método para frear (diminui a velocidade atual gradualmente)
     public void frear(double decremento) {
         if (decremento <= velocidade) {
             velocidade -= decremento;
@@ -30,7 +27,6 @@ class modelo_car {
         }
     }
 
-    // Getters
     public String getmarca() {
         return marca;
     }
@@ -57,12 +53,12 @@ public class carro {
         if (acao.equalsIgnoreCase("acelerar")) {
             System.out.println("Quanto deseja acelerar?");
             double quantoAc = entrada.nextDouble();
-            carros.acelerar(quantoAc); // Chamando o método acelerar do objeto
+            carros.acelerar(quantoAc);
         } 
         else if (acao.equalsIgnoreCase("frear")) {
             System.out.println("Quanto deseja frear/reduzir?");
             double quantoFr = entrada.nextDouble();
-            carros.frear(quantoFr); // Chamando o método frear do objeto
+            carros.frear(quantoFr);
         } else {
             System.out.println("Ação inválida!");
         }
