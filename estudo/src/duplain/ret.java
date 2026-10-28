@@ -55,7 +55,7 @@ public class ret {
         System.out.println("A altura definida foi : " + ret.getaltura());
         System.out.println("A largura definida foi : " +ret.getlargura());
         System.out.println("A área do triangulo é : " + ret.calc_area());
-        System.out.println("A área do triangulo é : " + ret.calc_perimetro());
+        System.out.println("O perímetro do triangulo é : " + ret.calc_perimetro());
 
         entrada.close();
     }
